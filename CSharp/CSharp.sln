@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp", "CSharp\CSharp.csproj", "{F24BE98E-D91E-477D-AAC0-054913B423FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpTests", "CSharpTests\CSharpTests.csproj", "{BF3FA9C3-5FFB-4603-BB57-D3D2414023B8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F24BE98E-D91E-477D-AAC0-054913B423FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F24BE98E-D91E-477D-AAC0-054913B423FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F24BE98E-D91E-477D-AAC0-054913B423FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F24BE98E-D91E-477D-AAC0-054913B423FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF3FA9C3-5FFB-4603-BB57-D3D2414023B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF3FA9C3-5FFB-4603-BB57-D3D2414023B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF3FA9C3-5FFB-4603-BB57-D3D2414023B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF3FA9C3-5FFB-4603-BB57-D3D2414023B8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
