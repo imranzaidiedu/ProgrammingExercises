@@ -47,5 +47,49 @@ namespace CSharpTests.Problems.Arrays
             int result = SumOfArray.Sum(new[] { int.MaxValue, 1, -1 });
             Assert.AreEqual(int.MaxValue, result);
         }
+        
+        // Additional tests for SumPositive method
+
+        [TestMethod]
+        public void SumPositive_MixedNumbers_ReturnsCorrectSum()
+        {
+            int result = SumOfArray.SumPositive(new[] { -1, 2, -3, 4, -5 });
+            Assert.AreEqual(6, result);
+        }
+
+        [TestMethod]
+        public void SumPositive_AllNegativeNumbers_ReturnsZero()
+        {
+            int result = SumOfArray.SumPositive(new[] { -1, -2, -3 });
+            Assert.AreEqual(0, result);
+        }
+
+        [TestMethod]
+        public void SumPositive_AllPositiveNumbers_ReturnsCorrectSum()
+        {
+            int result = SumOfArray.SumPositive(new[] { 1, 2, 3 });
+            Assert.AreEqual(6, result);
+        }
+
+        [TestMethod]
+        public void SumPositive_EmptyArray_ReturnsZero()
+        {
+            int result = SumOfArray.SumPositive(new int[0]);
+            Assert.AreEqual(0, result);
+        }
+
+        [TestMethod]
+        public void SumPositive_SinglePositiveElement_ReturnsThatElement()
+        {
+            int result = SumOfArray.SumPositive(new[] { 42 });
+            Assert.AreEqual(42, result);
+        }
+
+        [TestMethod]
+        public void SumPositive_SingleNegativeElement_ReturnsZero()
+        {
+            int result = SumOfArray.SumPositive(new[] { -42 });
+            Assert.AreEqual(0, result);
+        }
     }
 }
